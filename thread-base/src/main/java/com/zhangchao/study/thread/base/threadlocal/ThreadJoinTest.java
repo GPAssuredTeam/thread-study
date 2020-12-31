@@ -2,7 +2,10 @@ package com.zhangchao.study.thread.base.threadlocal;
 
 public class ThreadJoinTest {
 
-
+    /**
+     * 测试线程join机制，实现可见性
+     * @param args
+     */
     public static void main(String[] args) {
         Thread t1 = new Thread(()->{
             try {

@@ -14,7 +14,9 @@ public class ThreadLocalTest {
          new Thread(()->{
                 int num = threadLocal.get();
                 threadLocal.set(num+=5);
-                System.out.println(Thread.currentThread().getName()+"->"+num);
+                threadLocal.set(num+=8);
+
+             System.out.println(Thread.currentThread().getName()+"->"+num);
 
          }).start();
 
